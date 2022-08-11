@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsBytes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.png" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+   
+    <nav id="nav" role="navigation">    <center><div class="logo">
+           <a href=""><img src="img/logo.jpg" ></a> 
+        </div></center>  <a href="#nav" title="Show navigation">Show navigation</a> <a href="#" title="Hide navigation">Hide navigation</a>
+   
+        <ul class="clearfix">
+      <li><a href="">Home</a></li>
+      <li> <a href=""><span>Programing</span></a>
+            <ul>
+               
+          <li><a href="">HTML</a></li>
+          <li><a href="">CSS</a></li>
+          <li><a href="">JavaScript</a></li>
+          <li><a href="">Python</a></li>
+          <li><a href="">Php</a></li>
+          <li><a href="">C</a></li>
+          <li><a href="">C#</a></li>
+          <li><a href="">C++</a></li>
+
+        </ul>
+          </li>
+      <li> <a href=""><span>Categorized</span></a>
+            <ul>
+          <li><a href="">Web Design & Development</a></li>
+          <li><a href="">App Design & Development</a></li>
+          <li><a href="">Front-End</a></li>
+          <li><a href="">Back-End</a></li>
+        </ul>
+          </li>
+      <li><a href="">About</a></li>
+    </ul>
+  <div class="search">
+    <div class="icon">
+        <div class="input">
+<input type="text" placeholder="Search HTML" id="mysearch">
+        </div>
+    </div>
+  </div>
+  </nav>
+</body>
+<script src="http://osvaldas.info/examples/main.js"></script>
+  
+<script src="http://osvaldas.info/examples/drop-down-navigation-touch-friendly-and-responsive/doubletaptogo.js"></script> 
+  
+<script>
+    $( function()
+    {
+        $( '#nav li:has(ul)' ).doubleTapToGo();
+    });
+</script>
+<script>
+    const icon = document.querySelector('.icon');
+    const search = document.querySelector('.search');
+    icon.onclick = function(){
+         search.classList.toggle('active')
+    }
+    
+</script>
+</html>
